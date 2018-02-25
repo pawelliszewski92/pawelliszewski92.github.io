@@ -1,0 +1,87 @@
+/* selektor znacznika */
+p {
+    color: orange;
+}
+/*selektor id*/
+#id-text {
+    color: blue;
+    font-size: 22px;
+}
+/*selektor klasy*/
+.class-text {
+    color: red;
+    font-size: 18px;
+}
+/*łączenie selektorów*/
+.link, span, #title {
+    color: gray;
+    font-size: 11px;
+}
+
+/*potomek (wszystkie elementy potpomne)*/
+
+.potomek-bezp p {
+    color: green
+}
+/*potemek bezposredni*/
+.potomek-bezp>p {
+    color: darkblue;
+}
+
+#lista a {
+    font-weight: 900;
+    color: blue;
+    text-decoration: none;
+    
+}
+
+#lista a:hover {
+    font-weight: 900;
+    color: royalblue;
+    text-decoration: none;
+}
+
+/*selektor konkretnych elementów*/
+
+#lista2 li:nth-child(2) {
+    color: blueviolet;
+    background-color: steelblue;
+    font-size: 20px;
+}
+
+/*selektor kilku konkretnych elementów*/
+#lista3 li:nth-child(3n+4) {
+    color: blueviolet;
+    background-color: steelblue;
+    font-size: 20px;
+}
+#lista3 li:nth-child(2), #lista3 li:nth-child(5), #lista3 li:nth-child(6) {
+    color: blueviolet;
+    background-color: red;
+    font-size: 20px;
+}
+
+
+/*selektor bliskiego rodzieństwa*/
+header h2 + h3 {
+    color: darkolivegreen;
+}
+
+/*selektor calego rodzieństwa*/
+section h2 ~ h3 {
+    color: brown;
+}
+
+/*selektor wykluczający*/
+.list4 li:not(.last-item) {
+    color: white;
+    background-color: black
+}
+
+
+
+
+
+
+
+
