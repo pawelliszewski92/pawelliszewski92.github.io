@@ -78,6 +78,11 @@ section h2 ~ h3 {
     background-color: black
 }
 
+<!--selektor artybutu-->
+
+li a[href="http://google.pl"] {
+background-color: chartreuse;
+}
 
 
 
