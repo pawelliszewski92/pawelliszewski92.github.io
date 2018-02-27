@@ -1,7 +1,6 @@
 .contener {
-    border: solid black 1px;
-    width: 920px;
-    height: 920px;
+    width: 912px;
+    height: 912px;
     padding: 2px;
 }
 .square {
@@ -25,6 +24,53 @@
     background-color: red;
 }
 .circle1 {
-    background-color: gray;
-  
+    background-color: #ffc0cb;
+}
+.square2 {
+    background-color: #0000fe;
+}
+.circle2 {
+    background-color: #808080;
+}
+.square3 {
+    background-color: #008001;
+}
+.circle3 {
+    background-color: #81007f;
+}
+.square4 {
+    background-color: #ffff01;
+}
+.circle4 {
+    background-color: #008001;
+}
+.square5 {
+    background-color: black;
+}
+.circle5 {
+    background-color: red;
+}
+.square6 {
+    background-color: #fea500;
+}
+.circle6 {
+    background-color: #0000fe;
+}
+.square7 {
+    background-color: #81007f;
+}
+.circle7 {
+    background-color: #fea500;
+}
+.square8 {
+    background-color: #808080;
+}
+.circle8 {
+    background-color: #ffff01;
+}
+.square9 {
+    background-color: #ffc0cb;
+}
+.circle9 {
+    background-color: black;
 }
