@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://formspree.io/pawelliszewski92@gmail.com"
+      method="POST">
+<!--imię-->
+        <div>
+            <input type="text" name="name" placeholder="Imię">
+        </div>
+<!--nazwisko-->
+        <div>
+            <input type="text" name="surname" placeholder="Nazwisko">
+        </div>
+<!--email-->
+        <div>
+            <input type="email" name="email" placeholder="email">
+        </div>
+<!--wybor miasta-->
+        <div>
+           <label for="town">Wybierz miasto</label>
+            <select name="town" id="town">
+                <option value="krakow">Kraków</option>
+                <option value="warszawa">Warszawa</option>
+                <option value="gdansk">Gdańsk</option>
+            </select>
+        </div>
+        
+<!--płec-->
+        <div>
+            Wybierz płeć:
+            <input type="radio" id="genderm" name="gender" value="male">
+            <label for="genderm">Mężczyzna</label>
+            <input type="radio" id="genderf" name="gender" value="female">
+            <label for="genderf">Kobieta</label>
+        </div>
+<!--zgoda na dane osobowe-->
+        <div>
+            <label>
+                Zgoda na dane osobowe
+                <input type="checkbox" name="agreement">
+            </label>
+        </div>
+<!--wiadomosc-->
+        <div>
+            <textarea name="message" cols="30" rows="10" placeholder="Napisz wiadomość..."></textarea>
+        </div>
+    </form>
+</body>
+</html>
