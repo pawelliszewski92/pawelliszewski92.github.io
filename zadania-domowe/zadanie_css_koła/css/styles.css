@@ -1,0 +1,30 @@
+.contener {
+    border: solid black 1px;
+    width: 920px;
+    height: 920px;
+    padding: 2px;
+}
+.square {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    float: left;
+    margin: 2px;
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    border: black solid 1px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.square1 {
+    background-color: red;
+}
+.circle1 {
+    background-color: gray;
+  
+}
