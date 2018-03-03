@@ -1,0 +1,21 @@
+.p1::before {
+    content: "dodatkowa zawartość przed p1";
+    color: red;
+    font-size: 12px;
+}
+
+.p2::after {
+    content: "dodatkowa wartość po elemencie p2";
+    color: blue;
+    font-size: 20px;
+}
+
+.p3::first-letter {
+    color: darkblue;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.p4::first-line {
+    background-color: red;
+}
