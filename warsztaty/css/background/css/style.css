@@ -1,0 +1,8 @@
+body {
+    background: url(../img/water.jpg) center top repeat fixed;
+}
+div {
+    background: url(../img/batman.png);
+    width: 500px;
+    height: 500px;
+}
