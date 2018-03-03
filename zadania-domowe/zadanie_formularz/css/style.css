@@ -8,22 +8,29 @@ form {
 
 form input, form select, form textarea {
     background-color: #2b4a64;
-    margin-top: 3px;
-    margin-bottom: 4px;
     color: white;
     border: #2b4a64 1px solid;
     
 }
 
 input[type="text"], input[type="email"], select {
-    width: 150px;
+    width: 300px;
     height: 20px;
 }
 
-input::placeholder, textarea::placeholder, select {
+input::placeholder, select {
+    color: white;
+    font-family: Times New Roman;
+    font-size: 15px;
+    
+}
+textarea::placeholder {
     color: #ffffffa1;
     font-family: Times New Roman;
     font-size: 15px;
+}
+textarea {
+    width: 300px;
 }
 
 form input:focus, form select:focus, form textarea:focus {
@@ -48,3 +55,6 @@ h1 {
     font-size: 17px;
 }
 
+div {
+    margin-top: 15px;
+}
