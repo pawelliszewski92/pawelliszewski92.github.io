@@ -1,12 +1,17 @@
-.p1::before {
-    content: "dodatkowa zawartość przed p1";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#p1::before {
+    content: "dodatkowa zawartość przed p1 ";
     color: red;
     font-size: 12px;
 }
 
-.p2::after {
-    content: "dodatkowa wartość po elemencie p2";
-    color: blue;
+#p2::after {
+    content: "dodatkowa wartość po elemencie p2 ";
+    color: darkblue;
     font-size: 20px;
 }
 
@@ -19,3 +24,35 @@
 .p4::first-line {
     background-color: red;
 }
+
+p:target {
+    background-color: green;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+
+
+a:visited {
+    color: purple;
+}
+a:active {
+    color: blueviolet;
+}
+a:hover {
+    color: cornflowerblue;
+}
+/*moze byc na rozne sposob*/
+.table:nth-child(even) {
+    background-color: darkgray;
+}
+.table>:nth-child(odd) {
+    background-color: lightblue;
+}
+.table div:nth-child(5n+4) {
+    background-color: darkorange;
+}
+/*(5n+4) - co pięć, zaczynając od czwartego*/
