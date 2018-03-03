@@ -1,0 +1,10 @@
+#batman1 {
+    float: left;
+}
+
+#batman2 {
+    float: right;
+}
+.clear {
+    clear: both;
+}
