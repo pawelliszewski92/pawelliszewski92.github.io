@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <form action="https://formspree.io/pawelliszewski92@gmail.com"
       method="POST">
+      <h1>Formularz</h1>
 <!--imię-->
         <div>
             <input type="text" name="name" placeholder="Imię">
@@ -17,11 +19,11 @@
         </div>
 <!--email-->
         <div>
-            <input type="email" name="email" placeholder="email">
+            <input type="email" name="email" placeholder="Email">
         </div>
 <!--wybor miasta-->
         <div>
-           <label for="town">Wybierz miasto</label>
+           <label for="town">Wybierz miasto:</label><br/>
             <select name="town" id="town">
                 <option value="krakow">Kraków</option>
                 <option value="warszawa">Warszawa</option>
@@ -31,22 +33,22 @@
         
 <!--płec-->
         <div>
-            Wybierz płeć:
+            Wybierz płeć: <br/>
             <input type="radio" id="genderm" name="gender" value="male">
             <label for="genderm">Mężczyzna</label>
             <input type="radio" id="genderf" name="gender" value="female">
             <label for="genderf">Kobieta</label>
         </div>
-<!--zgoda na dane osobowe-->
+<!--wiadomosc-->
         <div>
+            <textarea name="message" cols="30" rows="10" placeholder="Napisz wiadomość..."></textarea>
+        </div>
+<!--zgoda na dane osobowe-->
+        <div class="dane">
             <label>
                 Zgoda na dane osobowe
                 <input type="checkbox" name="agreement">
             </label>
-        </div>
-<!--wiadomosc-->
-        <div>
-            <textarea name="message" cols="30" rows="10" placeholder="Napisz wiadomość..."></textarea>
         </div>
 <!--przycisk wyslij-->
         <div>
