@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -7,9 +9,15 @@ body {
     color: #291f1a;
     margin: 0;
     font-weight: 300;
-    background-color: red;
-    
+    background-color: white;
+        
 }
+
+section {
+    padding: 0 80px 100px;
+    width: 100%;
+}
+
 
 #main-nav {
     width: 100%;
@@ -42,7 +50,7 @@ body {
 
 #main-header .header-content {
     text-align: center;
-    padding: 35vh;
+    padding: 40vh;
 }
 
 #main-header .header-content h1 {
@@ -59,3 +67,78 @@ body {
     font-weight: 200;
     font-size: 30px;
 }
+/*
+#omnie #photo {
+    height: 300px;
+    float: left;
+    margin-left: 277px;
+    margin-right: 115px;
+    border-radius: 2%;
+}
+
+#omnie-text {
+    font-weight: 300;
+    line-height: 25px;
+    padding-right: 100px;
+}
+
+h2 {
+    text-align: center;
+    margin: 50px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+h2 span {
+    font-weight: 500;
+    color: #1ac056;
+}
+
+#omnie {
+    padding-bottom: 250px;
+    box-shadow: 12px 2px 12px #88888894;*/
+
+h2 {
+    text-align: center;
+    margin: 50px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+h2 span {
+    font-weight: 500;
+    color: #1ac056;
+
+}
+
+#omnie img {
+    max-height: 350px;
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+#omnie figure {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+    
+#omnie div {
+    width: 50%;
+    float: left;
+    line-height: 25px;
+    padding-right: 100px;
+}
+
+#omnie {
+    overflow: hidden;
+    background-color: #f9fcfe;
+    box-shadow: 0 2px 3px 1px #808080b5;
+}
+
+#skills {
+    text-align: center;
+}
+#skills figure {
+    display: inline-block;
+    margin: 40px;
