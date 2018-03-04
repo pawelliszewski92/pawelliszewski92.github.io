@@ -144,14 +144,19 @@ h2 span {
     margin: 40px;
 }
 
+/*
 .portall {
     width: 100%;
     text-align: center;
+    font-size: 0;
+  
+   
 }
 .portall > div {
-    width: 350px;
+    width: 360px;
     height: 350px;
     display: inline-block;
+    font-size: 14px;
 }
 
 .port1 {
@@ -167,4 +172,49 @@ h2 span {
 .port3 {
     background-image: url(../img/portfolio4.jpg);
     background: cover;
+}
+
+.port-hover:hover {
+    width: 360px;
+    height: 350px;
+    background-color: #0a79b9d1;
+    position: absolute;
+}*/
+
+#portfolio-items {
+    font-size: 0;
+    text-align: center;
+}
+.portfolio-item {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display:inline-block;
+    width: 33%;
+    position:relative;
+    font-size: initial;
+}
+
+#portfolio-item-1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#portfolio-item-2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+#portfolio-item-3 {
+    background-image: url(../img/portfolio4.jpg);
+}
+
+.portfolio-item-mask {
+    opacity: 0;
+    background-color: rgba(42, 61, 79, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.portfolio-item-mask:hover {
+    opacity: 1;
 }
