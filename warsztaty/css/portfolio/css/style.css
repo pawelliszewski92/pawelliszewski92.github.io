@@ -142,3 +142,29 @@ h2 span {
 #skills figure {
     display: inline-block;
     margin: 40px;
+}
+
+.portall {
+    width: 100%;
+    text-align: center;
+}
+.portall > div {
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+}
+
+.port1 {
+    background-image: url(../img/portfolio1.jpg);
+    background-size: cover;
+}
+
+.port2 {
+    background-image: url(../img/portfolio2.jpg);
+    background: cover;
+}
+
+.port3 {
+    background-image: url(../img/portfolio4.jpg);
+    background: cover;
+}
