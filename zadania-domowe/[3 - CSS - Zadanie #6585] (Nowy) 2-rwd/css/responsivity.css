@@ -29,6 +29,14 @@
 }
 
 @media (max-width:992px) {
-    
+    #frontend-img {
+        height: 50vh;
+        position: relative;
+  }
+    .frontend-text {
+    position: relative;
+    text-align: center;
+    transform: translateY(350%);
+    }
 }
     
