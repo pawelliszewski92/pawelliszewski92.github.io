@@ -1,0 +1,21 @@
+* {
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana;
+}
+
+#frontend-img {
+    max-width: 100%;
+}
+
+.front-end-photo {
+    width: 100%;
+}
+
+.frontend-text {
+    padding: 20px;
+}

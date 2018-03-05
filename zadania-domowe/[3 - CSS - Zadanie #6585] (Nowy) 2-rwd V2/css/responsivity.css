@@ -1,0 +1,36 @@
+@media (min-width:1170px) {
+    #frontend-img {
+        height: 100vh;
+    }
+    .frontend-text {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1170px) {
+     #frontend-img {
+        height: 70vh;
+     
+  }
+    .frontend-text {
+        position: absolute;
+        right: 0;
+        top:0;
+        color: white;
+    }
+}
+
+@media (max-width:992px) {
+    #frontend-img {
+        height: 50vh;    
+    }
+    .frontend-text {
+      text-align: center;
+    }
+}
+    
