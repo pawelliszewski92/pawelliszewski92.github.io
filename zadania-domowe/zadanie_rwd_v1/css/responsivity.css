@@ -10,6 +10,9 @@
         transform: translateY(-50%);
         color: white;
     }
+    .frontend-text2 {
+        display: none;
+    }
 }
 
 
@@ -26,6 +29,9 @@
         top:0;
         color: white;
     }
+    .frontend-text2 {
+        display: none;
+    }
 }
 
 @media (max-width:992px) {
@@ -34,9 +40,11 @@
         position: relative;
   }
     .frontend-text {
-    position: relative;
-    text-align: center;
-    transform: translateY(350%);
+   display: none;
+    }
+    .frontend-text2 {
+        text-align: center;
+        margin: 20px;
     }
 }
     
