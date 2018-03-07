@@ -1,44 +1,53 @@
-.box {
+.contener {
+    position: relative;
+    background-color: transparent;
+    height: 312px;
+    width: 512px;
     margin: auto;
     margin-top: 30px;
-    height: 260px;
-    width: 410px;
-    position: relative;
-    transition: border 2s ease-in-out;
+    text-align: center;
 }
 
-
-.photo-lake {
+.photo {
+    position: relative;
+    margin: auto;
     background-image: url(../img/3-jezioro.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 400px;
-    height: 250px;
+    background-position: cover;
+    height: 300px;
+    width: 500px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.description-box {
+    height: 312px;
+    width: 512px;
+    background-color: transparent;
     position: absolute;
-    top:5px;
-    left: 5px;
+    top:0;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.description-box:hover {
+    opacity: 1;    
 }
 
 .description {
-    position: relative;
-    widows: 100%;
+    position: absolute;
     height: 30%;
+    width: 100%;
+    background-color: #000000c2;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
+}
+.description-inner {
+    color: whitesmoke;
     font-size: 50px;
-    background-color: #000000b5;
-    top: 30%;
-    transform: translateY(-30%);
-    transition: all 2s ease-in-out;
-    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: 3px;
+    font-family: Courier New;
 }
 
-.description p {
-    position: relative;
-    top:50%;
-    transform: translateY(-50%);
-    color: white;
-   
-}
-.description:hover {
-    opacity:1;
-}
