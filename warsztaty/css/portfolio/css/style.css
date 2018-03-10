@@ -264,6 +264,7 @@ h2 span {
     width: 100%;
     padding: 40px;
     color: white;
+    overflow: hidden;
 }
 
 #footer-container .footer-contact h3 {
@@ -280,6 +281,7 @@ h2 span {
 
 #footer-container .footer-contact {
     width: 50%;
+    float: left;
 }
 
 #footer-container .footer-contact address {
@@ -327,3 +329,57 @@ h2 span {
     transform: translate(-50%,-50%);
     position: absolute;
 }
+
+
+/*formularz*/
+
+form {
+    width: 50%;
+    float: left;
+}
+
+form input, form textarea {
+    background-color: #2b4a64;
+    color: white;
+    border: #2b4a64 1px solid;
+    
+}
+
+input[type="text"], input[type="email"], select {
+    width: 450px;
+    height: 40px;
+}
+textarea {
+    width: 450px;
+    height: 120px;
+}
+    
+form input[type="submit"] {
+    background-color: green;
+    text-transform: uppercase;
+    font-weight: 800;
+    height:40px;
+    width: 100px;
+}
+
+form input[type="submit"]:hover {
+    background-color: limegreen;
+    border: white 1px solid;
+}
+
+form div {
+    margin-top: 20px;
+}
+
+.submit {
+    width: 450px;
+    text-align: right;
+}
+
+.footer-bottom {
+    color: white;
+    text-align: left;
+    background-color: #142634;
+    width: 100%;
+}
+
