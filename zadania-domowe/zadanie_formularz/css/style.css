@@ -33,6 +33,11 @@ textarea {
     width: 300px;
 }
 
+input::placeholder, textarea::placeholder {
+    padding: 10px;
+    color: #a9a9a9;
+}
+
 form input:focus, form select:focus, form textarea:focus {
     background-color: #4e708c;
     border: white 1px solid;

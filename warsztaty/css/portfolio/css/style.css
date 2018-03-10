@@ -354,6 +354,12 @@ textarea {
     height: 120px;
 }
     
+input::placeholder, textarea::placeholder {
+    padding: 10px;
+    color: #a9a9a9;
+}
+
+
 form input[type="submit"] {
     background-color: green;
     text-transform: uppercase;
@@ -381,5 +387,7 @@ form div {
     text-align: left;
     background-color: #142634;
     width: 100%;
+    padding-left: 15px;
+    padding-top: 5px;
 }
 
