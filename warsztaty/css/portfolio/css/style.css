@@ -257,3 +257,73 @@ h2 span {
     color: #1ac056;
 }
 
+/*     footer      */
+
+#footer-container {
+    background-color: #213b50;
+    width: 100%;
+    padding: 40px;
+    color: white;
+}
+
+#footer-container .footer-contact h3 {
+    text-align: left;
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+#footer-container .footer-contact h3 span {
+    font-weight: 500;
+    color: #1ac056;
+}
+
+#footer-container .footer-contact {
+    width: 50%;
+}
+
+#footer-container .footer-contact address {
+    font-style: normal;
+}
+
+#footer-container .footer-contact address a {
+    color:white ;
+    text-decoration: none;
+}
+
+#footer-container .footer-contact address a:hover {
+    color: #1ac056;
+}
+
+.contact-icons {
+    margin-top: 30px;
+}
+
+
+.contact-icon-outer {
+    margin-right: 35px;
+    display: inline-block;
+    border: 1px solid white;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.contact-icon {
+    color: white;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.contact-icon:hover {
+    color: #1ac056;
+
+}
+
+.contact-icon i {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
