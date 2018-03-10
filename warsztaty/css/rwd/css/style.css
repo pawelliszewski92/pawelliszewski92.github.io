@@ -1,0 +1,22 @@
+#container-rwd {
+    width: 600px;
+    height: 600px;
+    margin: 0;
+}
+
+#container-rwd h1{
+font-size: 60px;
+}
+
+#container-rwd .container-bg {
+    height: 200px;
+    border: 2px solid black;
+    background-image: url(../img/auto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#container-rwd p {
+    font-size: 40px;
+    color: blue;
+}
