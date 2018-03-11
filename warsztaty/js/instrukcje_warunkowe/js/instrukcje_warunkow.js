@@ -28,3 +28,19 @@ if(mojaLiczba == 5) {
 } else {
     console.log("moja liczba to ani 5 ani 15");
 }
+
+
+//instrukcje switch
+
+var kolor = "zielony";
+
+switch(kolor) {
+    case "czerwony":
+        console.log("kolor czerwony");
+break;
+    case "zielony":
+        console.log("kolor zielony");
+break;
+    default:
+        console.log("nie znalazlem dopasowania")
+}
