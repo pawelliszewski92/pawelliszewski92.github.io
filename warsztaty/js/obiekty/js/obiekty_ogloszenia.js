@@ -9,8 +9,7 @@ class Ogloszenia {
     wyswietl() {
         var ogloszenie = "Tytuł ogłoszenia: " + this.tytul + "\nTreść ogłoszenia: " + this.tresc + "\nCena ogłoszenia:" + this.cena + "\nKategoria ogłoszenia: " + this.kategoria;
         
-        return ogloszenie;
-        
+        return ogloszenie;        
     }
 }
 

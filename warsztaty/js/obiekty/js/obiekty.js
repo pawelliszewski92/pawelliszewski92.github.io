@@ -19,3 +19,4 @@ obiekt.showAge = function() {
 console.log(obiekt);
 
 obiekt.showAge();
+
