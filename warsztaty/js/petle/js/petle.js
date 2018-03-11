@@ -33,3 +33,21 @@ var tablica = ["Volvo", "Mazda", "Honda", "Audi"];
 
 
 //break i continue przerywanie i wznawianie petli
+
+//
+//for (var i = 1; i < 15; i++) {
+//    if(i > 6) {
+//        break;
+//    } else {
+//        console.log ("Obrot petli nr " + i)
+//    }
+//}
+
+
+for(var i = 1; i < 15; i++) {
+    if(i == 4 || i==6 || i==10) {
+        continue;
+    } else {
+        console.log("Iteracja nr " + i);
+    }
+}
