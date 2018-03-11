@@ -20,6 +20,7 @@ console.log(imiona);
 imiona.pop();
 console.log(imiona);
 
+
 //metoda unshift dodaje elementy na początku
 imiona.unshift("Arek","Agnieszka");
 console.log(imiona);
@@ -57,6 +58,15 @@ console.log(imiona);
 //sprawdzenie czy dany element tablicy istnieje
 console.log(imiona.indexOf("Ola"));
 console.log(imiona.indexOf("Czesław"));
+
+//usuwanie poszczegolnych elementow tablicy
+imiona.splice(1,1);
+console.log(imiona);
+
+imiona.splice(1,10);
+console.log(imiona);
+
+
 
 
 
