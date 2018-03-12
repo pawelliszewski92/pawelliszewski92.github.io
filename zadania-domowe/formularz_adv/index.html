@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <section class="container">
+        <header>
+        <h1>A Simple Form</h1>
+        <h2>Form Fundamentals</h2>
+        </header>
+
+        <form action="https://formspree.io/pawelliszewski92@gmail.com"
+          method="POST" autocomplete="on">
+             <fieldset>
+                <legend>Customer Info</legend>
+
+                    <div>
+                    <label>Name: <input type="text" name="name" placeholder="Enter your name here" autofocus required></label>
+                    </div>
+
+                     <div>
+                    <label>Telephone: <input type="tel" name="phone" placeholder="Pattern: 1-234-567-8910" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" title="Pattern: 1-234-567-8910" required> </label>
+                    </div>
+
+                     <div>
+                    <label>Email address: <input type="email" name="email" placeholder="Enter your email address here" required></label>
+                    </div>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Books</legend>
+
+                <div>
+                    <input name="books" list="books">
+                    <datalist id="books">
+                        <option value="book1"></option>
+                        <option value="book2"></option>
+                        <option value="book3"></option>
+                        <option value="book4"></option>
+                        <option value="book5"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label>Quantiti(Maximum 5)  <input type="number" name="quantity" min="1" max="5"></label>
+                </div>
+
+            </fieldset>
+             <div class="submit">
+              <input type="submit" value="Submit">
+              </div>
+        </form>
+    </section>
+</body>
+</html>
