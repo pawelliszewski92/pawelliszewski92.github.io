@@ -1,0 +1,65 @@
+.countdown:before {
+    display: block;
+    content: "10";
+    animation: counting;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    color: red;
+    animation-timing-function: ease-out;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+@keyframes counting {
+    0% {
+        content: "10";
+       
+    }
+    10% {
+        content: "9";
+        
+    }
+    20% {
+        content: "8";
+    }
+    30% {
+        content: "7";
+        
+    }
+    40% {
+        content: "6";
+       
+    }
+    50% {
+        content: "5";
+        
+    }
+    60% {
+        content: "4";
+      
+    }
+    70% {
+        content: "3";
+       
+    }
+    80% {
+        content: "2";
+       
+    }
+    90% {
+        content: "1";
+        background-color: yellow;
+        color: red;
+    }
+    100% {
+        content: "i love css!";
+        color: yellow;
+        background-color: red;
+    }
+}

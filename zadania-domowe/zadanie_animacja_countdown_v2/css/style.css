@@ -1,0 +1,115 @@
+ol {
+    display: block;
+    list-style-type: none;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    font-weight: 800;
+    background-color: yellow;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+
+ol li {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    opacity: 0;
+}
+
+.red {
+    background-color: red;
+    color: yellow;
+    opacity: 0;
+    animation: counting-red;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+
+
+@keyframes counting {
+  0% {
+    opacity: 1
+  }
+  5% {
+    opacity: 1
+  }
+  6% {
+    opacity: 0
+  }
+  100% {
+    opacity: 0
+  }
+    
+}
+
+@keyframes counting-red {
+  0% {
+    opacity: 0
+  }
+  89% {
+    opacity: 0
+  }
+  90% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
+  }
+    
+}
+
+ol li {
+  animation: counting;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+ol li:nth-of-type(1) {
+    animation-delay: 0;
+}
+
+ol li:nth-of-type(2) {
+   animation-delay: 1s;
+}
+
+ol li:nth-of-type(3) {
+   animation-delay: 2s;
+}
+
+ol li:nth-of-type(4) {
+  animation-delay: 3s;
+}
+
+ol li:nth-of-type(5) {
+  animation-delay: 4s;
+}
+
+ol li:nth-of-type(6) {
+  animation-delay: 5s;
+}
+
+ol li:nth-of-type(7) {
+  animation-delay: 6s;
+}
+
+ol li:nth-of-type(8) {
+  animation-delay: 7s;
+}
+
+ol li:nth-of-type(9) {
+  animation-delay: 8s;
+}
+
+ol li:nth-of-type(10) {
+  animation-delay: 9s;
+}
