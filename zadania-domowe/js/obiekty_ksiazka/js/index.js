@@ -27,12 +27,11 @@ var ksiazki = [ksiazka1, ksiazka2, ksiazka3];
 console.log(ksiazki);
 
 function iloscPrzeczytanych(array) {
+	var sum = 0;
     for(i=0;i<array.length;i++) {
-        array[i].opiszKsiazke();
-            var sum = 0;
+        array[i].opiszKsiazke();   
         if(array[i].przeczytana === true) {
-            
-            sum = sum +=1
+            sum++
            
         }
          
