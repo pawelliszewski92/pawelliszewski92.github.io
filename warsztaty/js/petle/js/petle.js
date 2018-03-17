@@ -9,9 +9,9 @@ var tablica = ["Volvo", "Mazda", "Honda", "Audi"];
 //}
 
 
-//tablica.forEach(function(element, index) {
-//    console.log("Index: " + index + " Element: " + element);
-//});
+tablica.forEach(function(element, index) {
+   console.log("Index: " + index + " Element: " + element);
+});
 
 
 //var iter = 0;
