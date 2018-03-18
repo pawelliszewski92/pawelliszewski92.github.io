@@ -1,0 +1,19 @@
+h1 {
+    transition: all 2s;
+}
+
+body {
+    background-color: white;
+}
+
+
+#parFirst {
+    width: 600px;
+    height: 200px;
+    background-color: black;
+}
+
+#par2 {
+    padding: 10px;
+    background-color: darkblue;
+}
