@@ -24,7 +24,6 @@ var ksiazka3 = new Ksiazka("Gra o Tron", "G.R.R. Martin", false);
 
 var ksiazki = [ksiazka1, ksiazka2, ksiazka3];
 
-console.log(ksiazki);
 
 function iloscPrzeczytanych(array) {
 	var sum = 0;
@@ -36,8 +35,9 @@ function iloscPrzeczytanych(array) {
         }
          
     }
-    
     console.log("Ilość przeczytanych książek to: " + sum);
+    return sum;
+    
 }
 
 iloscPrzeczytanych(ksiazki);

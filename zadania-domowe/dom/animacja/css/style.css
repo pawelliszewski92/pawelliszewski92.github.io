@@ -1,0 +1,21 @@
+#animationButton {
+    height: 35px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    text-transform: uppercase;
+}
+#animatedDiv {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    background-color: red;
+    position: absolute;
+}
+
+h2 {
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    display: none;
+}
