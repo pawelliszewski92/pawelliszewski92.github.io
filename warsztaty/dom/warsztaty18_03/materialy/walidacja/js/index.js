@@ -1,4 +1,3 @@
-debugger;
 var checkboxSelect = document.getElementById("wszystkie-zgody");
 
 var checkboxAll = document.getElementsByClassName("checkbox");
