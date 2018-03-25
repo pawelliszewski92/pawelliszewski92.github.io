@@ -1,0 +1,6 @@
+.alert {
+    border: 2px solid red;
+    width: 150px;
+    color: darkred;
+    padding: 5px;
+}
