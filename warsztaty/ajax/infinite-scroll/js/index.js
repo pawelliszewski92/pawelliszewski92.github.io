@@ -17,7 +17,9 @@ function ajax(method, url, callback) {
 }
 
 
-
+ajax("GET", "https://jsonplaceholder.typicode.com/users", function(data) {
+   console.log(data); 
+});
 
 window.onscroll = function(e) {
     if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
@@ -39,6 +41,14 @@ function infitinteUsers(data) {
         
         var userWebsite = document.createElement("p");
         userWebsite.innerHTML = ("Website: " + data[i].website);
+        body.appendChild(userWebsite);
+        
+        var bottom = document.createElement("p");
+        bottom.innerHTML = ("-------------------");
+        body.appendChild(bottom);
     };
 };
+
+
+
 
