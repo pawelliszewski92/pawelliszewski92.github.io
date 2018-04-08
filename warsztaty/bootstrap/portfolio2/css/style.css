@@ -1,0 +1,384 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+/*  NAWIGACJA  */
+#main-nav a {
+    color: white;
+    
+}
+
+#main-nav .navbar-brand {
+    font-family: 'Droid Serif', sans-serif;
+    font-size: 30px;
+}
+
+#main-nav .nav-link {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: white;
+}
+
+/*
+@media screen and (max-width: 992px) {
+    #main-nav {
+        background-color: white;
+    }
+    
+    #main-nav a {
+        color: #777;
+    }
+}
+*/
+
+/*   HEADER  */
+
+header {
+    background-image: url(../img/backgroung.png), url("../img/header/pictures_on_the_wall.jpg");
+    background-repeat: repeat no-repeat;
+    background-position: top left;
+    background-size:cover;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+header .inner-header {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: white;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    
+}
+
+header h1 {
+    font-size: 80px;
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+}
+
+header .inner-header .view-more {
+      padding: 10px;
+    text-transform:uppercase;
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    margin-top: 20px;
+}
+
+/*  SECTION 1 SERVICES  */
+
+section .title{
+    text-align: center;
+    margin: auto;
+    margin-top: 130px;
+    
+}
+
+section .title h2 {
+   text-transform: uppercase;
+   color: #333333;
+   font-family: 'Montserrat', sans-serif;
+}
+
+section .title h4 {
+    font-family: 'Droid Serif', sans-serif;
+    color: #777777;
+    font-size: 15px;
+}
+
+#services .row {
+    margin-bottom: 150px;
+    
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: #777777;
+}
+
+#services .services-item {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#services:last-child {
+    margin-bottom: 130px;
+}
+
+
+#services .services-item .img-border {
+    position: relative;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #0ed8d6;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+#services .services-item .img-border i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*  SECTION 2 PORTFOLIO  */
+
+#portfolio {
+    background-color: #f7f7f7;
+    padding-bottom: 130px;
+}
+
+#portfolio figure figcaption {
+    margin-top: 15px;
+    
+}
+
+#portfolio figure figcaption p {
+    font-family: 'Droid Serif', sans-serif;
+}
+
+#portfolio figure {
+    background-color: white;
+   margin: 15px 0 15px 0;
+}
+
+
+#portfolio .portfolio-img-container {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-img {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio-item:hover .portfolio-img {
+    transform: scale(2,2);
+}
+
+.portfolio-item .portfolio-img-mask {
+    width: 100%;
+    height: 300px;
+    background-color: #0e17d87d;
+    z-index: 2;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    top: 0;
+    left: 0;
+}
+
+.portfolio-item:hover .portfolio-img-mask {
+    opacity: 1;
+}
+
+
+
+.portfolio-img-mask i {
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    position: absolute;
+}
+
+
+.num1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+.num2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+.num3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+.num4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+.num5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+.num6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+
+
+/*   SECTION 3 TEAM   */
+
+
+.team-member-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+#team a {
+    text-decoration: none;
+}
+
+a div {
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+a:hover div {
+    background-color: #0ed8d6;
+}
+
+
+
+#team a div i {
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    
+}
+
+
+
+.team-member-one {
+    background-image: url(../img/team/man-1.jpg);
+}
+
+.team-member-two {
+    background-image: url(../img/team/man-2.jpg);
+}
+
+.team-member-three {
+    background-image: url(../img/team/woman-1.jpg);
+}
+
+.team-footer {
+    font-family: 'Droid Serif', sans-serif;
+}
+
+.team {
+    padding-bottom: 130px;
+}
+
+
+/*   SECTION 4 CONTACT   */
+
+#contact h2, #contact h4 {
+    color: white;
+}
+
+#contact {
+    background-image: url(../img/backgroung.png), url(../img/footer/world-map.jpg);
+    background-repeat: repeat;
+}
+
+form {
+    margin-top: 50px;
+    padding-bottom: 130px;
+}
+
+#contact form .sumbit {
+    margin: auto;
+    text-align: center;
+    
+}
+
+#contact form .sumbit input {
+    padding: 10px;
+    text-transform:uppercase;
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    margin-top: 20px;
+}
+
+form input, form textarea {
+    width: 80%;
+    border-radius: 3%;
+    padding: 10px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #777777;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left {
+    position: relative;
+}
+form .left input {
+    position: absolute;
+    border: 0px;
+    display: block;
+    right: 0px;
+}
+
+form .left:nth-child(1) {
+    top: 0px;
+}
+
+form .left:nth-child(3) {
+    bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
