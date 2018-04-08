@@ -1,0 +1,7 @@
+.carousel-inner {
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 800px;
+}

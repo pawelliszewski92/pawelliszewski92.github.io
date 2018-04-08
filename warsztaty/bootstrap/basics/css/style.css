@@ -1,0 +1,35 @@
+#c1, #c2 {
+    height: 100px;
+    background-color: red;
+}
+
+#c2 {
+    background-color: chartreuse;
+}
+
+
+
+.item {
+    height: 300px;
+    background-color: black;
+}
+
+.item:nth-last-of-type(2) {
+    background-color: royalblue;
+}
+
+.item:nth-last-of-type(3) {
+    background-color: rebeccapurple;
+}
+
+.item:nth-last-of-type(4) {
+    background-color: yellowgreen;
+}
+
+.item:nth-last-of-type(5) {
+    background-color: red;
+}
+
+.item:nth-last-of-type(6) {
+    background-color: gray;
+}
