@@ -1,14 +1,9 @@
-var jsonPracownicy = {
-    "pracownicy":[
-        {"firstName": "Krystian", "lastName": "Dziopa"}, 
-        {"firstName": "Anna", "lastName": "Szapiel"},
-        {"firstName": "Piotr", "lastName": "Żmuda"}
-    ]
+function numberOfLettersInAString(string,letter) {
+  var regex = new RegExp(letter, "gi");
+  console.log(regex);
+  var numberOfLetters = string.match(regex).length;
+  console.log(numberOfLetters);
+  return numberOfLetters;
 }
 
-console.log(jsonPracownicy);
-
-jsonPracownicy.pracownicy.forEach(function(element, index)) {
-     console.log("Index: " + index + " Imię: " + element.firstName + " Nazwisko: " + element.lastName);
-                                  
-}
+numberOfLettersInAString("Szkoła Programowania Akademia 108","a");
