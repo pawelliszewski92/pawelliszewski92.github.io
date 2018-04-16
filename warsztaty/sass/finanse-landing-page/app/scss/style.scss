@@ -1,0 +1,34 @@
+@import "zmienne";
+@import "mixin";
+
+body {
+    margin: 0;
+    padding: 0;
+
+#main {
+    height: 100vh;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+}
+    .col-6 {
+        position: relative;
+        
+        #finanse-logo {
+        @include center;
+        
+    }
+        #call-us {
+            @include center;
+        } 
+        
+        .call-us-inside {
+            display: inline-block;
+        }
+    }
+}
+
+
+
+
+

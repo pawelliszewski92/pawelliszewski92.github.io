@@ -1,0 +1,11 @@
+@mixin block-center {
+    left: 0;
+    right: 0;
+    width: 200px;
+    margin: auto;
+}
+
+@mixin zaokraglenie($promien) {
+    border: 1px dotted red;
+    border-radius: $promien;
+}

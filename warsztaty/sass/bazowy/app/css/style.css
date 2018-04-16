@@ -1,0 +1,22 @@
+body {
+  background-color: lightblue; }
+  body nav {
+    background-color: darkblue; }
+    body nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      body nav ul li {
+        display: inline-block; }
+        body nav ul li a {
+          color: white; }
+  body a {
+    color: white; }
+  body div#container {
+    border: 1px dotted red;
+    border-radius: 20px; }
+    body div#container h2 {
+      left: 0;
+      right: 0;
+      width: 200px;
+      margin: auto; }

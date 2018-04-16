@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0; }
+  body #main {
+    height: 100vh;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-size: cover; }
+  body .col-6 {
+    position: relative; }
+    body .col-6 #finanse-logo {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%); }
+    body .col-6 #call-us {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%); }
+    body .col-6 .call-us-inside {
+      display: inline-block; }
