@@ -23,8 +23,9 @@ header h1 {
     padding-top: 10vh;
 }
 
-#main-nav {
-  transition: all 0.2s ease-in-out;
+.navbar {
+  background: transparent;
+  transition: all 1s ease-in-out;
 }
 .navbar-light .navbar-brand {
     color: #f0944a;
@@ -62,7 +63,7 @@ header h1 {
     }
 }
 
-.scrolled {
+#main-nav .scrolled {
     background:linear-gradient(to right, #db2431, #7c4295eb);
     
 }
