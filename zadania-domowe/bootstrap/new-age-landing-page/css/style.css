@@ -63,7 +63,7 @@ header h1 {
     }
 }
 
-#main-nav .scrolled {
+.scrolled {
     background:linear-gradient(to right, #db2431, #7c4295eb);
     
 }
