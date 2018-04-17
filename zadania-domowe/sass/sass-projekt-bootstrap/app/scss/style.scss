@@ -1,0 +1,433 @@
+@import "zmienne";
+@import "mixins";
+
+body {
+    
+    font-family: $font1;
+    
+    
+   // NAVIGATION 
+    
+    .navbar-light {
+        transition: all 0.5s ease-in-out;
+        background-color: transparent;
+    }
+    
+    .scrolled {
+        background-color: darkblue;
+    }
+    
+    #main-nav a {
+    color: $color1;
+    
+    }
+    
+     #main-nav a:hover {
+    color: $color3;
+    
+    }
+
+    #main-nav .navbar-brand {
+        font-family: $font2;
+        font-size: 30px;
+    }
+
+    #main-nav .nav-link {
+        text-transform: uppercase;
+        font-family: $font3;
+    }
+
+    .navbar-light .navbar-toggler {
+        background-color: $color1;
+    }
+    // HEADER
+    
+    #header {
+        height: 100vh;
+        background-image: url(../img/backgroung.png), url(../img/header/pictures_on_the_wall.jpg);
+        background-repeat: repeat, no-repeat;
+        background-position: top left;
+        background-size:cover;
+        position: relative;
+        text-align: center;
+        
+        .inner-header {
+            @include center;
+            color: $color1;
+            
+            h1 {
+                font-size: 80px;
+                margin: 20px 0 20px 0;
+                text-transform: uppercase;
+                
+            }
+            
+            .view-more {
+                    @include button; 
+                    text-decoration: none;
+                    
+                }
+            .view-more:hover {
+                background-color: $color7;
+            }
+        }
+    }
+    
+     
+// SECTION 1 - SERVICES
+ 
+    section .title {
+    @include title; 
+    
+         h2 {
+           text-transform: uppercase;
+           color: $color2;
+           font-family: $font3;
+        }
+        
+        h4 {
+            font-family: $font2;
+            color: $color3;
+            font-size: 15px;
+        }
+    }
+    
+    .row {
+    margin-bottom: 150px;
+    } 
+    
+    .services-item {
+        text-align: center;
+        margin-top: 50px;
+        
+        
+        h5 {
+            font-family: $font3;
+        }
+
+        p {
+            color: $color3;
+        }
+        
+        .img-border {
+            position: relative;
+            margin: auto;
+            margin-bottom: 30px;
+            background-color: $color4;
+            color: $color1;
+            font-size: 30px;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            transition: all 1s ease-in-out;
+            
+            i {
+                @include center;
+            }
+        }
+        
+        .img-border:hover {
+            background-color: $color1;
+            border: 1px solid $color4;
+            
+            i {
+                color: $color4;
+            }
+            
+        }
+    }
+    
+    
+    //SECTION 2 - PORTFOLIO
+    
+    #portfolio {
+        background-color: $color5;
+        padding-bottom: 130px;
+        
+        figure {
+             background-color: $color1;
+             margin: 15px 0 15px 0;
+            
+            
+            figcaption {
+                margin-top: 15px;
+                
+                p {
+                    font-family: $font2;
+                    color: $color3;
+                }
+    
+            }
+            
+            .portfolio-img-container {
+                height: 300px;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+
+                .portfolio-img {
+                    background-position: center;
+                    background-size: cover;
+                    width: 100%;
+                    height: 100%;
+                    transition: all 0.3s ease-in-out;
+                }
+                
+                .port-num1 {
+                    background-image: url(../img/portfolio/box_of_cookies.jpg);
+                }
+                
+                 .port-num2 {
+                    background-image: url(../img/portfolio/chaotic_paint.jpg);
+                }
+                
+                 .port-num3 {
+                    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+                }
+                
+                 .port-num4 {
+                    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+                }
+                
+                 .port-num5 {
+                    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+                }
+                
+                 .port-num6 {
+                    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+                }                
+                
+                
+                .portfolio-img-mask {
+                    width: 100%;
+                    height: 300px;
+                    background-color: $color6;
+                    z-index: 2;
+                    position: absolute;
+                    opacity: 0;
+                    transition: all 0.3s ease-in-out;
+                    top: 0;
+                    left: 0;
+                    
+                    i {
+                        @include center;
+                        color: $color1;
+                        font-size: 50px;
+                     
+                        
+                        }
+                    }
+                }
+                 
+         }   
+        
+        
+        figure:hover .portfolio-img {
+            transform: scale(2,2); 
+        }
+        
+        figure:hover .portfolio-img-mask {
+            opacity: 1;
+        }
+        
+       
+    }
+    
+    //SECTION 3 - TEAM
+    
+    #team {
+        
+        .team {
+            padding-bottom: 130px;
+
+        
+            .team-member-img {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                background-position: center;
+                background-size: contain;
+                margin: auto;
+                margin-bottom: 20px;
+                margin-top: 35px;
+            }
+
+            .team-member-one {
+                background-image: url(../img/team/man-1.jpg);
+            }
+
+              .team-member-two {
+                background-image: url(../img/team/man-2.jpg);
+            }
+
+              .team-member-three {
+                background-image: url(../img/team/woman-1.jpg);
+            }
+            
+            h5 {
+                font-family: $font3;
+                color: $color2;
+            }
+            
+            p {
+                color: $color3;
+            }
+            
+            .team-footer {
+                font-family: $font2;
+            }
+            
+            a { 
+                @include media;
+            }
+             
+            a:hover div {
+                background-color: $color4;
+            }
+
+        }
+    }
+    
+    
+    // SECTION 4 - CONTACT
+    
+    #contact {
+        background-image: url(../img/backgroung.png), url(../img/footer/world-map.jpg);
+        background-repeat: repeat;
+        
+        .row {
+            margin: 0;
+        }
+        
+        h2, h4 {
+            color: $color1;
+        }
+        
+        form {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            
+            input, textarea {
+                border-radius: 5px;
+                padding: 15px;
+            }
+            
+            
+            input {
+                display:block;
+                margin-left: auto;
+                margin-right: 0;
+                width: 80%;
+                height: 68px;
+            
+            }
+        
+           input[type="email"] {
+                margin: 32px 0 32px auto;
+           }
+        
+           textarea {
+                display: block;
+                margin-right: auto;
+                margin-left: 0;
+                width: 80%;
+            }
+            
+            input::placeholder, textarea::placeholder {
+                text-transform: uppercase;
+                font-family: $font3;
+                font-size: 14px;  
+                color: $color4;
+            }
+            
+            input:focus, textarea:focus {
+                outline: none;
+                background-color: $color5;
+            }
+            
+            .submit {
+                
+                margin: auto;
+                text-align: center;
+                
+                input {
+                    @include button;
+                }
+                
+                input:hover {
+                    background-color: $color7;
+                }
+            }
+            
+         
+         }
+            
+    }
+    // FOOTER
+    
+    #footer {
+        .row {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            
+         
+            .copyright{
+                    @include center;
+            }
+            
+            
+            .media{
+                @include center;
+                
+                a { 
+                    @include media;
+                }
+             
+                a:hover div {
+                    background-color: $color4;
+                }
+            }
+            
+            .policies {
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    margin: 10px;
+                    color: $color2;
+                    
+                }
+                
+                a:hover {
+                    color: $color3;
+                }
+            }
+         
+            
+            
+        }
+    } 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

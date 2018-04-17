@@ -1,0 +1,269 @@
+body {
+  font-family: "Roboto Slab", serif; }
+  body .navbar-light {
+    transition: all 0.5s ease-in-out;
+    background-color: transparent; }
+  body .scrolled {
+    background-color: darkblue; }
+  body #main-nav a {
+    color: white; }
+  body #main-nav a:hover {
+    color: #777777; }
+  body #main-nav .navbar-brand {
+    font-family: "Droid Serif", sans-serif;
+    font-size: 30px; }
+  body #main-nav .nav-link {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif; }
+  body .navbar-light .navbar-toggler {
+    background-color: white; }
+  body #header {
+    height: 100vh;
+    background-image: url(../img/backgroung.png), url(../img/header/pictures_on_the_wall.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: top left;
+    background-size: cover;
+    position: relative;
+    text-align: center; }
+    body #header .inner-header {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; }
+      body #header .inner-header h1 {
+        font-size: 80px;
+        margin: 20px 0 20px 0;
+        text-transform: uppercase; }
+      body #header .inner-header .view-more {
+        padding: 10px;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        width: 200px;
+        margin-top: 20px;
+        background-color: #0ed8d6;
+        text-decoration: none; }
+      body #header .inner-header .view-more:hover {
+        background-color: #0ed89e; }
+  body section .title {
+    text-align: center;
+    margin-top: 130px; }
+    body section .title h2 {
+      text-transform: uppercase;
+      color: #333333;
+      font-family: "Montserrat", sans-serif; }
+    body section .title h4 {
+      font-family: "Droid Serif", sans-serif;
+      color: #777777;
+      font-size: 15px; }
+  body .row {
+    margin-bottom: 150px; }
+  body .services-item {
+    text-align: center;
+    margin-top: 50px; }
+    body .services-item h5 {
+      font-family: "Montserrat", sans-serif; }
+    body .services-item p {
+      color: #777777; }
+    body .services-item .img-border {
+      position: relative;
+      margin: auto;
+      margin-bottom: 30px;
+      background-color: #0ed8d6;
+      color: white;
+      font-size: 30px;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      transition: all 1s ease-in-out; }
+      body .services-item .img-border i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    body .services-item .img-border:hover {
+      background-color: white;
+      border: 1px solid #0ed8d6; }
+      body .services-item .img-border:hover i {
+        color: #0ed8d6; }
+  body #portfolio {
+    background-color: #f7f7f7;
+    padding-bottom: 130px; }
+    body #portfolio figure {
+      background-color: white;
+      margin: 15px 0 15px 0; }
+      body #portfolio figure figcaption {
+        margin-top: 15px; }
+        body #portfolio figure figcaption p {
+          font-family: "Droid Serif", sans-serif;
+          color: #777777; }
+      body #portfolio figure .portfolio-img-container {
+        height: 300px;
+        width: 100%;
+        overflow: hidden;
+        position: relative; }
+        body #portfolio figure .portfolio-img-container .portfolio-img {
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          transition: all 0.3s ease-in-out; }
+        body #portfolio figure .portfolio-img-container .port-num1 {
+          background-image: url(../img/portfolio/box_of_cookies.jpg); }
+        body #portfolio figure .portfolio-img-container .port-num2 {
+          background-image: url(../img/portfolio/chaotic_paint.jpg); }
+        body #portfolio figure .portfolio-img-container .port-num3 {
+          background-image: url(../img/portfolio/chestnut_on_bracket.jpg); }
+        body #portfolio figure .portfolio-img-container .port-num4 {
+          background-image: url(../img/portfolio/child_with_blue_paint.jpg); }
+        body #portfolio figure .portfolio-img-container .port-num5 {
+          background-image: url(../img/portfolio/house_with_blue_doors.jpg); }
+        body #portfolio figure .portfolio-img-container .port-num6 {
+          background-image: url(../img/portfolio/typing_on_laptop.jpg); }
+        body #portfolio figure .portfolio-img-container .portfolio-img-mask {
+          width: 100%;
+          height: 300px;
+          background-color: #0e17d87d;
+          z-index: 2;
+          position: absolute;
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
+          top: 0;
+          left: 0; }
+          body #portfolio figure .portfolio-img-container .portfolio-img-mask i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 50px; }
+    body #portfolio figure:hover .portfolio-img {
+      transform: scale(2, 2); }
+    body #portfolio figure:hover .portfolio-img-mask {
+      opacity: 1; }
+  body #team .team {
+    padding-bottom: 130px; }
+    body #team .team .team-member-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-position: center;
+      background-size: contain;
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: 35px; }
+    body #team .team .team-member-one {
+      background-image: url(../img/team/man-1.jpg); }
+    body #team .team .team-member-two {
+      background-image: url(../img/team/man-2.jpg); }
+    body #team .team .team-member-three {
+      background-image: url(../img/team/woman-1.jpg); }
+    body #team .team h5 {
+      font-family: "Montserrat", sans-serif;
+      color: #333333; }
+    body #team .team p {
+      color: #777777; }
+    body #team .team .team-footer {
+      font-family: "Droid Serif", sans-serif; }
+    body #team .team a {
+      text-decoration: none; }
+      body #team .team a div {
+        background-color: black;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin: 5px;
+        display: inline-block;
+        position: relative; }
+        body #team .team a div i {
+          color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+    body #team .team a:hover div {
+      background-color: #0ed8d6; }
+  body #contact {
+    background-image: url(../img/backgroung.png), url(../img/footer/world-map.jpg);
+    background-repeat: repeat; }
+    body #contact .row {
+      margin: 0; }
+    body #contact h2, body #contact h4 {
+      color: white; }
+    body #contact form {
+      margin-top: 100px;
+      margin-bottom: 100px; }
+      body #contact form input, body #contact form textarea {
+        border-radius: 5px;
+        padding: 15px; }
+      body #contact form input {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        width: 80%;
+        height: 68px; }
+      body #contact form input[type="email"] {
+        margin: 32px 0 32px auto; }
+      body #contact form textarea {
+        display: block;
+        margin-right: auto;
+        margin-left: 0;
+        width: 80%; }
+      body #contact form input::placeholder, body #contact form textarea::placeholder {
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: #0ed8d6; }
+      body #contact form input:focus, body #contact form textarea:focus {
+        outline: none;
+        background-color: #f7f7f7; }
+      body #contact form .submit {
+        margin: auto;
+        text-align: center; }
+        body #contact form .submit input {
+          padding: 10px;
+          text-transform: uppercase;
+          font-family: "Montserrat", sans-serif;
+          width: 200px;
+          margin-top: 20px;
+          background-color: #0ed8d6; }
+        body #contact form .submit input:hover {
+          background-color: #0ed89e; }
+  body #footer .row {
+    margin-bottom: 20px;
+    margin-top: 20px; }
+    body #footer .row .copyright {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    body #footer .row .media {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      body #footer .row .media a {
+        text-decoration: none; }
+        body #footer .row .media a div {
+          background-color: black;
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          margin: 5px;
+          display: inline-block;
+          position: relative; }
+          body #footer .row .media a div i {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+      body #footer .row .media a:hover div {
+        background-color: #0ed8d6; }
+    body #footer .row .policies a {
+      display: inline-block;
+      text-decoration: none;
+      margin: 10px;
+      color: #333333; }
+    body #footer .row .policies a:hover {
+      color: #777777; }
