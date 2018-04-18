@@ -15,9 +15,9 @@ body {
   body #main-nav .nav-link {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif; }
-  body .navbar-light .navbar-toggler {
+  body #main-nav .navbar-toggler {
     background-color: white; }
-  body #header {
+  body header {
     height: 100vh;
     background-image: url(../img/backgroung.png), url(../img/header/pictures_on_the_wall.jpg);
     background-repeat: repeat, no-repeat;
@@ -25,17 +25,17 @@ body {
     background-size: cover;
     position: relative;
     text-align: center; }
-    body #header .inner-header {
+    body header .inner-header {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white; }
-      body #header .inner-header h1 {
+      body header .inner-header h1 {
         font-size: 80px;
         margin: 20px 0 20px 0;
         text-transform: uppercase; }
-      body #header .inner-header .view-more {
+      body header .inner-header .view-more {
         padding: 10px;
         text-transform: uppercase;
         font-family: "Montserrat", sans-serif;
@@ -43,7 +43,7 @@ body {
         margin-top: 20px;
         background-color: #0ed8d6;
         text-decoration: none; }
-      body #header .inner-header .view-more:hover {
+      body header .inner-header .view-more:hover {
         background-color: #0ed89e; }
   body section .title {
     text-align: center;
@@ -57,7 +57,7 @@ body {
       color: #777777;
       font-size: 15px; }
   body .row {
-    margin-bottom: 150px; }
+    margin-bottom: 50px; }
   body .services-item {
     text-align: center;
     margin-top: 50px; }
@@ -267,3 +267,23 @@ body {
       color: #333333; }
     body #footer .row .policies a:hover {
       color: #777777; }
+
+@media (max-width: 1372px) {
+  #main-nav {
+    background-color: darkblue; }
+  #header .inner-header h1 {
+    font-size: 50px; } }
+
+@media (max-width: 770px) {
+  body #contact .container .contact form input {
+    margin-right: auto;
+    width: 100%; }
+  body #contact .container .contact form textarea {
+    margin-left: auto;
+    width: 100%;
+    margin-top: 30px; }
+  #footer .col-md-4 {
+    height: 40px; }
+  #footer .container .row .policies {
+    margin: auto;
+    width: 260px; } }

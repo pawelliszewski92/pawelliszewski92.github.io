@@ -17,32 +17,34 @@ body {
         background-color: darkblue;
     }
     
-    #main-nav a {
-    color: $color1;
+    #main-nav {
+        a {
+            color: $color1;
+        }
+        
+        a:hover {
+            color: $color3;
     
+        }
+        
+        .navbar-brand {
+            font-family: $font2;
+            font-size: 30px;
+        }
+        
+        .nav-link {
+            text-transform: uppercase;
+            font-family: $font3;
+        }
+        
+        .navbar-toggler {
+            background-color: $color1;
+        }
     }
     
-     #main-nav a:hover {
-    color: $color3;
-    
-    }
-
-    #main-nav .navbar-brand {
-        font-family: $font2;
-        font-size: 30px;
-    }
-
-    #main-nav .nav-link {
-        text-transform: uppercase;
-        font-family: $font3;
-    }
-
-    .navbar-light .navbar-toggler {
-        background-color: $color1;
-    }
     // HEADER
     
-    #header {
+    header {
         height: 100vh;
         background-image: url(../img/backgroung.png), url(../img/header/pictures_on_the_wall.jpg);
         background-repeat: repeat, no-repeat;
@@ -93,7 +95,7 @@ body {
     }
     
     .row {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     } 
     
     .services-item {
@@ -411,7 +413,40 @@ body {
 
 
 
+@media (max-width:1372px) {
+    #main-nav {
+        background-color: darkblue;
+    }
+    
+    #header .inner-header h1 {
+        font-size: 50px;
+    } 
+}
 
+@media (max-width:770px) { 
+    body #contact .container .contact form input {
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    body #contact .container .contact form textarea {
+        margin-left: auto;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    #footer .col-md-4 {
+        height: 40px;
+    }
+    
+    #footer .container .row .policies {
+        margin: auto;
+        width: 260px;
+    }
+    
+    
+    
+}
 
 
 
