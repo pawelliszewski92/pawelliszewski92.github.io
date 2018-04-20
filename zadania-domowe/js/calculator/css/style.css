@@ -1,0 +1,71 @@
+form {
+    width: 268px;
+    padding: 10px;
+    border: 1px black solid;
+    background-color: orange;
+}
+
+#answer {
+    display: block;
+    width: 250px;
+    margin: auto;
+    height: 40px;
+    margin-bottom: 4px;
+    text-align: right;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin: 2px;
+    height: 60px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.num {
+    background-color: #3d3a3a; 
+}
+.num:active {
+    background-color: darkslategray;
+}
+
+
+.sm {
+    width: 60px;  
+}
+
+.big {
+    width: 128px;
+}
+.del {
+    background-color: red;
+}
+
+.del:active {
+    background-color: orangered;
+}
+
+
+.op {
+    background-color: #797474;
+}
+
+.op:active {
+    background-color: darkgray;
+}
+
+.eq {
+    background-color: green;
+}
+
+.eq:active {
+    background-color: limegreen;
+}
