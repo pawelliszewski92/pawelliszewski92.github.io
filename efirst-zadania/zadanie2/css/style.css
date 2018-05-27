@@ -150,7 +150,6 @@ ol {
     width: 604px;
     margin-top: 34px;
     margin-bottom:22px; 
-
 }
 
 li {
@@ -211,8 +210,8 @@ li img {
 }
 
 .triangle-bottom {
-    right: 0;
     position: absolute;
+    right: 0;
 }
 
 
