@@ -63,7 +63,40 @@ body, p {
     left: 435px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    width: 300px;
 }
+
+#top .clock-digit {
+    display: inline-block;
+    position: relative;
+    height: 64px;
+    width: 52px;
+    background-color: #143a4f;
+    border: 1px solid #224f64;
+    text-shadow: none;
+    font-size: 55px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    margin-right: 2px;
+}
+
+.clock-digit p, .clock-digit span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.clock-digit span {
+    width: 52px;
+    height: 1px;
+    background-color: #101a26;
+}
+
+
+
 
 .txt4 {
     top: 550px;
