@@ -1,0 +1,91 @@
+.mail-container {
+    max-width: 600px;
+}
+
+.s1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+.img1 {
+    position: relative;
+    max-height: 681px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.img1 img {
+    position: absolute;
+}
+
+h1 {
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-top {
+    width: 200px;
+    text-align: center;
+    background-color: #ed8020;
+    border-radius: 5px;
+    margin: auto;
+    color: black;
+    font-weight: 600;
+}
+
+.p-top, .p-bottom {
+    margin-left: 45px;
+    width: 300px;
+}
+
+.p-top {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 260px;
+}
+
+.p-bottom {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+h3, .orange {
+    color: #c55300
+}
+
+h3 {
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+img {
+    float: left;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+
+.orange {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+li {
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+.btn-bottom {
+    width: 350px;
+    background-color: #ed8020;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    margin: 40px auto 40px auto;;
+    padding: 1px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
