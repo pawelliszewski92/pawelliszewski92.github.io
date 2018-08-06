@@ -103,6 +103,10 @@ h2 span {
     background-image: url(../img/backgroung.png), url(../img/header-coding.jpg);
     background-repeat: repeat, no-repeat;
     background-position: top left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-size: cover;
     position: relative;
 }
