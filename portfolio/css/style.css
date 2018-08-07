@@ -19,7 +19,7 @@ section {
     width: 100%;
 }
 
-#main-header a, #portfolio a, #omnie a, #kontakt a {
+#main-nav a, #main-header a, #portfolio a, #omnie a, #kontakt a {
     text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ h2 span {
 
 
 
-.at-the-top {
+#main-nav {
     width: 100%;
     position: fixed;
     top: 0;
@@ -72,13 +72,18 @@ h2 span {
     
 }
 
+#main-nav li {
+    display: inline-block;
+    margin-top: 10px;
+}
 
-.scrolled .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+
+#main-nav a:hover {
     color: #f4ff9c;
 }
 
 
-.navbar-light .navbar-nav .nav-link {
+#main-nav a{
     color: white;
     font-size: 20px;
     margin: 0 10px 0 10px;
@@ -86,10 +91,6 @@ h2 span {
     transition: all .2s ease-in-out;
 }
 
-
-.navbar-light .navbar-toggler{
-    background-color: rgba(255, 255, 255, 0.836);
-}
 
 
 /*  HEADER  */
@@ -100,6 +101,13 @@ h2 span {
     background-size: cover;
     position: relative;
 }
+
+@media (max-width:960px) {
+    #main-header {
+        background-size: auto;
+    }
+}
+
 
 .header-content {
     text-align: center;
@@ -397,7 +405,7 @@ h2 span {
     bottom: 25%;
 }
 
-@media (max-width:992px) {
+@media (max-width:960px) {
     .star2 {
         bottom: 18%;  
     }
