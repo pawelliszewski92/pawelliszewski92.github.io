@@ -107,6 +107,12 @@ h2 span {
     position: relative;
 }
 
+@media (max-width: 960px) {
+    #main-header {
+        background-size: initial;
+    }
+}
+
 .header-content {
     text-align: center;
     position: absolute;
