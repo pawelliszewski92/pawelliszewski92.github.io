@@ -109,7 +109,7 @@ h2 span {
 
 @media (max-width: 960px) {
     #main-header {
-        background-size: initial;
+        background-size: auto;
     }
 }
 
@@ -343,7 +343,7 @@ h2 span {
     height: 4px;
 }
 
-.twstar4, .twstar5, .twstar6, .twstar7. .twstar8, .twstar9, .twstar10 {
+.twstar4, .twstar5, .twstar6, .twstar7, .twstar8, .twstar9, .twstar10 {
     width: 3px;
     height: 3px;
 }
