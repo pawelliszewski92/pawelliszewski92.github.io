@@ -67,8 +67,8 @@ h2 span {
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: transparent;
     transition: all .3s ease-in-out;
+    background-color: #00000094;
     
 }
 
@@ -89,10 +89,6 @@ h2 span {
 
 .navbar-light .navbar-toggler{
     background-color: rgba(255, 255, 255, 0.836);
-}
-
-.scrolled {
-    background-color: #00000094;
 }
 
 
@@ -335,7 +331,7 @@ h2 span {
     height: 4px;
 }
 
-.twstar4, .twstar5, .twstar6, .twstar7. .twstar8, .twstar9, .twstar10 {
+.twstar4, .twstar5, .twstar6, .twstar7,.twstar8, .twstar9, .twstar10 {
     width: 3px;
     height: 3px;
 }
@@ -492,14 +488,14 @@ h2 span {
 }
 
 
-@media (min-width:768px) and (max-width: 1199px) {
+@media (min-width:960px) and (max-width: 1199px) {
     .omnie-text {
         margin-top: 0px;
     }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .omnie-text:first-child {
         text-align: center;
     }
@@ -635,17 +631,18 @@ form div {
     padding-top: 5px;
 }
 
-@media (max-width:768px) {
+
+@media (max-width: 960px) {
     input[type="text"], input[type="email"], select, textarea, .submit {
         width: 90vw;  
     }
 
 }
 
-
-@media (min-width:768px) and (max-width: 960px) {
-    input[type="text"], input[type="email"], select, textarea, .submit {
-        width: 40vw;  
+@media (max-width:960px) {
+    form {
+        margin: auto;
+        width: 90vw;
     }
 
 }
