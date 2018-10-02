@@ -4,7 +4,11 @@ import Table from "./common/table";
 class ItemsTable extends Component {
   state = {
     columns: [
-      { path: "photo", label: "Photo" },
+      {
+        path: "photo",
+        label: "Photo",
+        content: item => <img alt={item.category + "photo"} src={item.photo} />
+      },
       { path: "category", label: "Category" },
       { path: "price", label: "Price" },
       { path: "desc", label: "Description" }

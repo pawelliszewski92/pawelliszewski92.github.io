@@ -30,7 +30,7 @@ class TableBody extends Component {
 }
 
 TableBody.defaultProps = {
-  valueProperty: "_id"
+  valueProperty: "id"
 };
 
 export default TableBody;

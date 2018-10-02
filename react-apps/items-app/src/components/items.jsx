@@ -4,16 +4,20 @@ import ItemsTable from "./itemsTable";
 
 class Items extends Component {
   state = {
-    sortColumn: { path: "", order: "" },
-    data: [{ photo: "", category: "", price: "20 PLN", desc: "Action figure" }]
+    sortColumn: { path: "", order: "" }
   };
+
+  handleAddNew = () => {
+    this.props.history.push("/new");
+  };
+
   render() {
     return (
       <div>
-        <Link to="/new">
-          <button className="btn btn-primary m-2">Add new item</button>
-        </Link>
-        <ItemsTable sortColumn={this.state.sortColumn} data={this.state.data} />
+        <button onClick={this.handleAddNew} className="btn btn-primary m-2">
+          Add new item
+        </button>
+        <ItemsTable sortColumn={this.state.sortColumn} data={this.props.data} />
       </div>
     );
   }
