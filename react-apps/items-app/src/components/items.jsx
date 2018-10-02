@@ -11,13 +11,21 @@ class Items extends Component {
     this.props.history.push("/new");
   };
 
+  handleSort = sortColumn => {
+    this.setState({ sortColumn });
+  };
+
   render() {
     return (
       <div>
         <button onClick={this.handleAddNew} className="btn btn-primary m-2">
           Add new item
         </button>
-        <ItemsTable sortColumn={this.state.sortColumn} data={this.props.data} />
+        <ItemsTable
+          data={this.props.data}
+          sortColumn={this.state.sortColumn}
+          onSort={this.handleSort}
+        />
       </div>
     );
   }

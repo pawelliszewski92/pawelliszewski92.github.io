@@ -10,16 +10,18 @@ class ItemsTable extends Component {
         content: item => <img alt={item.category + "photo"} src={item.photo} />
       },
       { path: "category", label: "Category" },
-      { path: "price", label: "Price" },
+      { path: "price", label: "Price", content: item => "€ " + item.price },
       { path: "desc", label: "Description" }
     ]
   };
   render() {
+    const { columns, sortColumn, data, onSort } = this.props;
     return (
       <Table
         columns={this.state.columns}
-        sortColumn={this.props.sortColumn}
-        data={this.props.data}
+        sortColumn={sortColumn}
+        data={data}
+        onSort={onSort}
       />
     );
   }
