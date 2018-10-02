@@ -1,12 +1,13 @@
 import React from "react";
 import Form from "./common/form";
 import Joi from "joi-browser";
+import { getCategories } from "./../services/itemsService";
 
 class NewItem extends Form {
   state = {
     data: { photo: "", category: "", price: "", desc: "" },
     errors: [],
-    genres: [{ name: "Action figures", id: 1 }]
+    categories: []
   };
 
   schema = {
@@ -15,6 +16,14 @@ class NewItem extends Form {
     desc: Joi.string().required(),
     photo: Joi.required()
   };
+
+  async componentDidMount() {
+    const { data } = await getCategories();
+    const categories = data.map(item => ({
+      name: item.name
+    }));
+    this.setState({ categories });
+  }
 
   fileSelectedHandler = event => {
     const photo = URL.createObjectURL(event.target.files[0]);
@@ -34,7 +43,7 @@ class NewItem extends Form {
       <div>
         <h1>New Item</h1>
         <form onSubmit={this.handleSubmit}>
-          {this.renderSelect("category", "Category", this.state.genres)}
+          {this.renderSelect("category", "Category", this.state.categories)}
           {this.renderInput("price", "Price")}
           {this.renderInput("desc", "Description")}
           <input type="file" onChange={this.fileSelectedHandler} />
