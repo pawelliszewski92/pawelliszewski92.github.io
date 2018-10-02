@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "category": { "id": 1, "name": "Action Figures" },
+      "price": 50,
+      "desc": "Spider Man action figure",
+      "photo": "https://media.entertainmentearth.com/assets/images/53f7a19713174136bed6b282abe94431lg.jpg"
+    },
+    {
+      "id": 2,
+      "category": { "id": 1, "name": "Action Figures" },
+      "price": 45,
+      "desc": " action figure",
+      "photo": "https://images-na.ssl-images-amazon.com/images/I/711Xg2tc4mL._SY879_.jpg"
+    },
+    {
+      "id": 3,
+      "category": { "id": 1, "name": "Action Figures" },
+      "price": 50,
+      "desc": "Deadpool action figure",
+      "photo": "https://images-na.ssl-images-amazon.com/images/I/81ISMxGd4ML._SX522_.jpg"
+    },
+    {
+      "id": 4,
+      "category": { "id": 2, "name": "PS4 Games" },
+      "price": 100,
+      "desc": "PS4 Spiderman Game",
+      "photo": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6234/6234455_sd.jpg;maxHeight=640;maxWidth=550"
+    },
+    {
+      "id": 5,
+      "category": { "id": 2, "name": "PS4 Games" },
+      "price": 90,
+      "desc": "Dark Souls 3 PS4 game",
+      "photo": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5834/5834602_sd.jpg;maxHeight=640;maxWidth=550"
+    },
+    {
+      "id": 6,
+      "category": { "id": 3, "name": "Board Games" },
+      "price": 50,
+      "desc": "Monopoly",
+      "photo": "https://images-na.ssl-images-amazon.com/images/I/91RSg9MCGtL._SX466_.jpg"
+    },
+    {
+      "id": 7,
+      "category": { "id": 1, "name": "Action Figures" },
+      "price": 50,
+      "desc": "Songo action figure",
+      "photo": "https://images-na.ssl-images-amazon.com/images/I/61sDWshRAKL._SY879_.jpg"
+    },
+    {
+      "id": 8,
+      "category": { "id": 1, "name": "Action Figures" },
+      "price": 50,
+      "desc": "Gandalf action figure",
+      "photo": "https://images-na.ssl-images-amazon.com/images/I/419ZFJ79N4L.jpg"
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Action Figures"
+    },
+    {
+      "id": 2,
+      "name": "PS4 Games"
+    },
+    {
+      "id": 3,
+      "name": "Board Games"
+    }
+  ]
+}
