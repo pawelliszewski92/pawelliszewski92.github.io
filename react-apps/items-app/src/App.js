@@ -34,10 +34,12 @@ class App extends Component {
     const itemsRender = props => <Items {...props} data={this.state.data} />;
 
     return (
-      <Switch>
-        <Route path="/new" render={newItemRender} />
-        <Route path="/" component={itemsRender} />
-      </Switch>
+      <main className="container">
+        <Switch>
+          <Route path="/new" render={newItemRender} />
+          <Route path="/" component={itemsRender} />
+        </Switch>
+      </main>
     );
   }
 }

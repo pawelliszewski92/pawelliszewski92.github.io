@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ItemsTable from "./itemsTable";
+import Pagination from "./common/pagination";
 import { getCategories } from "./../services/itemsService";
 
 class Items extends Component {
@@ -18,7 +19,7 @@ class Items extends Component {
 
   render() {
     return (
-      <div>
+      <div className="col">
         <button onClick={this.handleAddNew} className="btn btn-primary m-2">
           Add new item
         </button>
