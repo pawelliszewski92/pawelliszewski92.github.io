@@ -1,0 +1,10 @@
+.item-img {
+  height: 300px;
+  background-size: cover;
+  background-position: center top;
+  border-radius: 2px;
+}
+
+.card {
+  margin-bottom: 20px;
+}

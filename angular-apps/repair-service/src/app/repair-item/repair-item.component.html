@@ -1,0 +1,24 @@
+<div class="card">
+  <div class="item-img" [ngStyle]="{ 'background-image': 'url(' + item.img + ')'}"></div>
+  <div class="card-body text-center">
+    <button type="button" (click)="onToggle()" class="btn btn-lg btn-block" [ngClass]="{
+      'btn-success': item.isWorking,
+      'btn-danger': !item.isWorking
+    }">
+      {{item.name}}
+      <i class="fas" [ngClass]="{
+        'fa-check': item.isWorking,
+        'fa-wrench': !item.isWorking
+      }"></i>
+    </button>
+    <span class="badge badge-info">Category: {{item.category.name}}</span>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngIf="item.properties.length > 0">
+      <span class="badge badge-pill badge-primary m-1" *ngFor="let property of item.properties ">{{property.name}}: {{property.content}}</span>
+    </li>
+    <li class="list-group">
+      <comments [comments]="item.comments" (handleSubmit)="handleSubmit($event)"></comments>
+    </li>
+  </ul>
+</div>

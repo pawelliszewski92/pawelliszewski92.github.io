@@ -1,0 +1,19 @@
+<zippy title="Comments" class="text-center">
+
+    <comment-form *ngIf="addingNew" (onSubmit)="onSubmit($event)"></comment-form>
+
+    <p *ngIf="comments.length === 0">There are no comments.</p>
+
+    <button class="btn btn-primary m-4" *ngIf="!addingNew" (click)="onAddNew()">
+        <i class="fas fa-plus-circle"></i> Add a comment
+    </button>
+
+    <div class="card" style="width: 18rem;" *ngFor="let comment of comments">
+        <div class="card-body">
+            <h5 class="card-title">{{comment.user}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{comment.date | date: "medium"}}</h6>
+            <p class="card-text">{{comment.content}}</p>
+        </div>
+    </div>
+
+</zippy>

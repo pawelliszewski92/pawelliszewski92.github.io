@@ -1,0 +1,3 @@
+<ul class="list-group">
+  <li class="list-group-item pointer" *ngFor="let item of items" (click)="onClick(item)" [class.active]="item.id === selected.id">{{item.name}}</li>
+</ul>
